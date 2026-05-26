@@ -1,4 +1,5 @@
 name: Deploy Laravel App
+uses: appleboy/ssh-action@v1
 
 on:
   push:
@@ -20,8 +21,11 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-
+          debug: true
+            
           script: |
+            whoami
+            pwd
             cd /var/www/laravel-app
 
             git pull origin main
