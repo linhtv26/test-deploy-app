@@ -1,1 +1,1 @@
-Việt nam quê hương tôi!
+Công cha như núi thái sơn, nghĩa mẹ như nước trong nguồn chảy ra!

@@ -22,7 +22,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
 
           script: |
-            cd /var/www/laravel-app
+            cd /var/www/test-deploy-app
 
             git pull origin main
 
